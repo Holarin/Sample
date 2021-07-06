@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+         <VBox prefHeight="397.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+             <children>
+            <Text fx:id="name" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.53670883178711" />
+                 <ListView fx:id="viewArrow" prefHeight="660.0" prefWidth="100.0" />
+             </children>
+      </VBox>
+   </left>
+   <center>
+        <Canvas fx:id="canvas" height="594.0" onMousePressed="#mousePressed" onMouseReleased="#mouseReleased" width="892.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
